@@ -1,0 +1,72 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "title": "SharePoint Azure Functions",
+    "version": "1.0.0"
+  },
+  "host": "spfunction.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/api/CreateFolder": {
+      "post": {
+        "description": "Creates SharePoint sub folder in a folder.",
+        "summary": "Create Folder",
+        "operationId": "Create Folder",
+        "produces": [],
+        "consumes": [],
+        "parameters": [
+          {
+             "name": "Folder Creation Info",
+              "in": "body",
+              "description": "Folder Creation Information",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/folderCreationInfo"
+              }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Result message shows if folder is created or already exists",
+            "x-ms-summary": "Result message",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "folderCreationInfo": {
+      "type": "object",
+      "properties": {
+        "sharePointSiteUrl": {
+          "type": "string"
+        },
+        "baseFolderServerRelativeUrl": {
+          "type": "string"
+        },
+        "newFolderName": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "apikeyQuery": {
+      "type": "apiKey",
+      "name": "code",
+      "in": "query"
+    }
+  }
+}
