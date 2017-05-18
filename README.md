@@ -14,6 +14,6 @@ Parameters:
 
 The MIT License (MIT)
 
-Copyright (c) [Plumsail](https://plumsail.com)
+Copyright (c) Plumsail
 
-![Plumsail](https://static.plumsail.com/wp-content/uploads/2017-05-18_12-26-43.png)
+[![Plumsail](https://static.plumsail.com/wp-content/uploads/2017-05-18_12-26-43.png)](https://plumsail.com)
