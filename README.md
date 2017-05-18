@@ -9,3 +9,11 @@ Parameters:
 - sharePointSiteUrl — SharePoint site URL
 - baseFolderServerRelativeUrl — Server relative URL of a folder where you want to create a sub-folder
 - newFolderName — Name for a new sub-folder
+
+## License ##
+
+The MIT License (MIT)
+
+Copyright (c) Plumsail
+
+![Plumsail](https://static.plumsail.com/wp-content/uploads/2017-05-18_12-26-43.png)
